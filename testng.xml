@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="bol.com" verbose="1"parallel="tests" thread-count="2">
+    <test name="CHROME" annotations="JDK" >
+        <parameter name="browser" value="chrome"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="platform" value="Windows 11"/>
+        <classes>
+            <class name="Runners.Run"/>
+        </classes>
+    </test> <!--Test-->
+    <test name="EDGE" annotations="JDK">
+        <parameter name="browser" value="Microsoft Edge"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="platform" value="Windows 11"/>
+        <classes>
+            <class name="Runners.Run"/>
+        </classes>
+    </test>
+</suite>
