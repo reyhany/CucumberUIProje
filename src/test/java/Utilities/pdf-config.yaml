@@ -1,0 +1,26 @@
+pdfReport:
+  title: "Cucumber UI Test Report"
+  subtitle: "Detailed Test Execution Results"
+  author: "QA Team"
+  company: "Your Company"
+  outputDirectory: "target/pdf-reports"
+  outputFileName: "CucumberUI_Test_Report.pdf"
+  includeScreenshots: true
+  screenshotPath: "target/screenshots"
+  timestampFormat: "yyyy-MM-dd HH:mm:ss"
+  logoPath: "path/to/your/logo.png"
+  styles:
+    headerColor: "#333399"
+    footerColor: "#333399"
+    passColor: "#28a745"
+    failColor: "#dc3545"
+    skipColor: "#ffc107"
+  sections:
+    - name: "Overview"
+      include: true
+    - name: "Test Summary"
+      include: true
+    - name: "Test Cases"
+      include: true
+    - name: "Screenshots"
+      include: true
